@@ -26,4 +26,22 @@ public class SettingsMenuScript : MonoBehaviour
     {
         AudioListener.volume = value;
     }
+
+    public void LanguageChanged(int language)
+    {
+        Debug.Log("AAAAAAAA: " + language);
+        if (language == 0)
+        {
+            TextLocalization.CurrentLanguage = "english";
+        }
+        else if (language == 1)
+        {
+            TextLocalization.CurrentLanguage = "german";
+        }
+
+        
+
+        Debug.Log("BBBBBBBB: " + TextLocalization.CurrentLanguage);
+
+    }
 }
