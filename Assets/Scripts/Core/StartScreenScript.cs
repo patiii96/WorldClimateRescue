@@ -25,7 +25,7 @@ public class StartScreenScript : MonoBehaviour
 
     public void SelectLevelButtonClick()
     {
-
+        SceneManager.LoadScene("SelectLevelScene");
     }
 
     public void SettingsButtonClick()
